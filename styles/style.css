@@ -1,0 +1,463 @@
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+nav {
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.city-logo {
+    position: absolute;
+    top: 11px;
+    left: 5%;
+}
+
+*:focus {
+    outline: none;
+}
+
+.city-logo .logo {
+    height: 32px;
+    width: 107px;
+    background-image: url(../images/logo-small.jpg);
+    background-repeat: no-repeat;
+}
+
+.nav-list li {
+    display: inline-block;
+}
+
+.nav-list a {
+    display: inline-block;
+    padding: 0 20px;
+    color: rgba(0, 0, 0, .65);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 55px;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-list a:hover,
+.nav-list a:focus,
+.nav-list a:active {
+    background-color: #f2f2f2;
+    color: rgba(0, 0, 0, .85);
+}
+
+.active-map,
+.active-city {
+    color: #6dc5dc;
+}
+/* blog */
+
+article {
+    padding: 0 20px;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.article {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 20px 0;
+    width: 800px;
+    border-top: 2px solid #dcdcdc;
+}
+
+.article a {
+    color: #000;
+    text-decoration: none;
+    transition: color 0.4s ease;
+}
+
+.article a:hover {
+    color: #3498db;
+}
+
+.blog-title {
+    color: #000;
+}
+
+.cover-img {
+    margin: 40px 0 20px;
+}
+
+.time {
+    margin: 10px 0;
+    color: #939393;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.title {
+    margin: 30px 0;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.article p {
+    margin: 15px 0 40px;
+    color: #535353;
+    line-height: 1.7;
+}
+
+.more {
+    margin: 20px 0 40px;
+    color: #3498db;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+}
+/* end of blog */
+
+.head {
+    position: relative;
+    height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.head-2 {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.map {
+    background: url(../images/paris-1.jpg);
+}
+
+.cover {
+    position: relative;
+    float: left;
+    overflow: hidden;
+    width: 33.333333333%;
+    height: 420px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.cover-content:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .55);
+    content: '';
+    opacity: 1;
+    transition: opacity 0.4s ease;
+}
+
+.cover:hover .cover-content:before {
+    opacity: 0.6;
+}
+
+.cover-content h2 {
+    position: absolute;
+    top: 45%;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+}
+
+.cover-content p {
+    position: absolute;
+    top: 58%;
+    left: 25%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 50%;
+    border: 2px solid #fff;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 400;
+    transition: all 0.4s ease-in-out;
+}
+
+.cover:hover .read-more {
+    background: rgba(255, 255, 255, 0.9);
+    color: #000;
+}
+
+.cover-content a:hover,
+.cover-content a:focus,
+.cover-content a:active {
+    background: rgba(255, 255, 255, 0.9);
+    color: #000;
+}
+
+.image-1 {
+    background: url(../images/paris-2.jpg);
+}
+
+.iamge-2 {
+    background: url(../images/paris-3.jpg);
+}
+
+.image-3 {
+    background: url(../images/paris-4.jpg);
+}
+
+.head .title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.head h1 {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 20px 20px;
+    background-color: rgba(0, 0, 0, 0.45);
+    color: #fff;
+    font-weight: 300;
+    font-size: 48px;
+}
+
+.head p {
+    margin-bottom: 20px;
+    color: #fff;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 1.4;
+}
+
+.section {
+    display: block;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 800px;
+}
+
+.section .column {
+    padding: 20px 40px 60px;
+    background-color: #f8f8f8;
+}
+
+.thank-you-form {
+    padding: 20px 40px 60px;
+    height: 400px;
+    background-color: #f8f8f8;
+    line-height: 1.8;
+}
+
+.thank-you-form p {
+    padding: 10px 0;
+}
+
+section label {
+    display: inline-block;
+    margin: 15px 0 5px;
+}
+
+.section h3,
+.section h1 {
+    margin: 1rem 0 0;
+}
+
+.section h1 {
+    margin-bottom: 1rem;
+    font-weight: 300;
+    font-size: 1.6rem;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 7px;
+    border: 2px solid #dcdcdc;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 250px;
+}
+/* checkbox */
+
+span.check-target {
+    color: #808080;
+    font-size: 20px;
+    font-family: FontAwesome;
+    transition: all 0.2s ease-in-out;
+}
+
+input[type="checkbox"].check {
+    position: relative;
+    left: -999rem;
+    /*hide the real checkbox*/
+}
+
+input[type="checkbox"].check + span.check-target:after {
+    content: "\f096";
+    /*open square (fa-square-o)*/
+}
+
+input[type="checkbox"].check:checked + span.check-target:after {
+    color: #3498db;
+    content: "\f046";
+    /* check box (fa-check-square-o) */
+}
+
+span.bigcheck {
+    display: inline-block;
+    margin-left: -20px;
+    padding-right: 10px;
+}
+
+span.check-target:hover {
+    color: #3498db;
+}
+/* end of checkbox */
+/* radio button */
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"],
+label.checked {
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    border: 2px solid #dcdcdc;
+}
+/* end of radio button */
+/* nav */
+
+.pg-home .active-home,
+.pg-blog .active-blog,
+.pg-map .active-map,
+.pg-thank .active-map {
+    background-color: #e5e5e5;
+}
+
+iframe {
+    border: 0;
+}
+
+.title p {
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, .45);
+    font-weight: 300;
+}
+/* age selection */
+
+.age {
+    padding: 7px;
+    border: 2px solid #dcdcdc;
+    color: #777;
+    font-family: sans-serif;
+    transition: all 0.4s ease-in-out;
+}
+/* end of age selection */
+
+textarea {
+    max-width: 700px;
+    width: 350px;
+    height: 100px;
+}
+
+input,
+textarea {
+    color: #777;
+    font-family: sans-serif;
+    transition: all 0.4s ease-in-out;
+}
+
+input:focus,
+textarea:focus,
+.age:focus {
+    border: 2px solid #3498db;
+    color: #343434;
+    font-family: sans-serif;
+}
+/* submit button */
+
+input[type="submit"] {
+    overflow: hidden;
+    margin: 0.5em 0;
+    padding: 1.2em 2em;
+    outline: none;
+    border: none;
+    background: #3498db;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+input[type="submit"]:hover {
+    background: #2980b9;
+}
+
+input[type="submit"] {
+    position: relative;
+    top: 25px;
+}
+
+input[type="submit"]:active {
+    border: 1px solid #2980b9;
+    -webkit-box-shadow: 0 0 2px 1px #2980b9 inset;
+    -moz-box-shadow: 0 0 2px 1px #2980b9 inset;
+    box-shadow: 0 0 2px 1px #2980b9 inset;
+
+    -ms-box-shadow: 0 0 2px 1px #2980b9 inset;
+    -o-box-shadow: 0 0 2px 1px #2980b9 inset;
+}
+/* end of submit button */
+/* footer */
+
+footer {
+    width: 100%;
+    height: 80px;
+    background-color: #dcdcdc;
+    text-align: center;
+    line-height: 80px;
+}
+
+footer .footer-content {
+    margin: 0 auto;
+    width: 800px;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+footer a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+footer a:hover,
+footer a:focus,
+footer a:active {
+    color: #2980b9;
+}
+/* end of footer */
+
+.clearfix {
+    display: block;
+    visibility: hidden;
+    clear: both;
+    height: 0;
+    content: " ";
+    /* Older browser do not support empty content */
+}
